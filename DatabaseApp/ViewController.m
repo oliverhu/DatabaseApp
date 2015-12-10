@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DatabaseCell.h"
 
-@interface ViewController ()
+@interface ViewController ()<UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 
 @end
 
@@ -16,12 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Delegates
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DatabaseCell" forIndexPath:indexPath];
+    DatabaseCell *databaseCell = (DatabaseCell *)cell;
+    databaseCell.cellLabel.text = @"2";
+    return databaseCell;
 }
 
 @end

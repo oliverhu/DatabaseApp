@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53BA029E6E7AE0F2FAB20A5E /* Pods_DatabaseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E839D12D0617F5E637EA902A /* Pods_DatabaseApp.framework */; };
 		847A40B01C19659D00B9D51D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A40AF1C19659D00B9D51D /* main.m */; };
 		847A40B31C19659D00B9D51D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A40B21C19659D00B9D51D /* AppDelegate.m */; };
 		847A40B61C19659D00B9D51D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A40B51C19659D00B9D51D /* ViewController.m */; };
@@ -14,6 +15,7 @@
 		847A40BB1C19659D00B9D51D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A40BA1C19659D00B9D51D /* Assets.xcassets */; };
 		847A40BE1C19659D00B9D51D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847A40BC1C19659D00B9D51D /* LaunchScreen.storyboard */; };
 		847A40C91C19659D00B9D51D /* DatabaseAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A40C81C19659D00B9D51D /* DatabaseAppTests.m */; };
+		847A40D71C196C0400B9D51D /* DatabaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 847A40D61C196C0400B9D51D /* DatabaseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08D43692390FA53667AD5CE8 /* Pods-DatabaseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DatabaseApp/Pods-DatabaseApp.debug.xcconfig"; sourceTree = "<group>"; };
 		847A40AB1C19659D00B9D51D /* DatabaseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatabaseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847A40AF1C19659D00B9D51D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		847A40B11C19659D00B9D51D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +43,11 @@
 		847A40C41C19659D00B9D51D /* DatabaseAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DatabaseAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		847A40C81C19659D00B9D51D /* DatabaseAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DatabaseAppTests.m; sourceTree = "<group>"; };
 		847A40CA1C19659D00B9D51D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		847A40D41C1968D900B9D51D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		847A40D51C196C0400B9D51D /* DatabaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseCell.h; sourceTree = "<group>"; };
+		847A40D61C196C0400B9D51D /* DatabaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseCell.m; sourceTree = "<group>"; };
+		DA0B735987CC4512B5C8331F /* Pods-DatabaseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DatabaseApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-DatabaseApp/Pods-DatabaseApp.release.xcconfig"; sourceTree = "<group>"; };
+		E839D12D0617F5E637EA902A /* Pods_DatabaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DatabaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53BA029E6E7AE0F2FAB20A5E /* Pods_DatabaseApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E8463BC061B93BC5ABADE85 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08D43692390FA53667AD5CE8 /* Pods-DatabaseApp.debug.xcconfig */,
+				DA0B735987CC4512B5C8331F /* Pods-DatabaseApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		678D36873927214B7CD1BCB0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E839D12D0617F5E637EA902A /* Pods_DatabaseApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		847A40A21C19659D00B9D51D = {
 			isa = PBXGroup;
 			children = (
 				847A40AD1C19659D00B9D51D /* DatabaseApp */,
 				847A40C71C19659D00B9D51D /* DatabaseAppTests */,
 				847A40AC1C19659D00B9D51D /* Products */,
+				0E8463BC061B93BC5ABADE85 /* Pods */,
+				678D36873927214B7CD1BCB0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +118,8 @@
 				847A40BC1C19659D00B9D51D /* LaunchScreen.storyboard */,
 				847A40BF1C19659D00B9D51D /* Info.plist */,
 				847A40AE1C19659D00B9D51D /* Supporting Files */,
+				847A40D51C196C0400B9D51D /* DatabaseCell.h */,
+				847A40D61C196C0400B9D51D /* DatabaseCell.m */,
 			);
 			path = DatabaseApp;
 			sourceTree = "<group>";
@@ -118,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847A40CD1C19659D00B9D51D /* Build configuration list for PBXNativeTarget "DatabaseApp" */;
 			buildPhases = (
+				8D1C028742D4EC33609738C5 /* Check Pods Manifest.lock */,
 				847A40A71C19659D00B9D51D /* Sources */,
 				847A40A81C19659D00B9D51D /* Frameworks */,
 				847A40A91C19659D00B9D51D /* Resources */,
+				0D84C9C74C27680C9D45E0A7 /* Embed Pods Frameworks */,
+				C1779C5ED7DFF80CCCD128D9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +239,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D84C9C74C27680C9D45E0A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DatabaseApp/Pods-DatabaseApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1C028742D4EC33609738C5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1779C5ED7DFF80CCCD128D9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DatabaseApp/Pods-DatabaseApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847A40A71C19659D00B9D51D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -213,6 +294,7 @@
 			files = (
 				847A40B61C19659D00B9D51D /* ViewController.m in Sources */,
 				847A40B31C19659D00B9D51D /* AppDelegate.m in Sources */,
+				847A40D71C196C0400B9D51D /* DatabaseCell.m in Sources */,
 				847A40B01C19659D00B9D51D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +322,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				847A40B81C19659D00B9D51D /* Base */,
+				847A40D41C1968D900B9D51D /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -339,6 +422,7 @@
 		};
 		847A40CE1C19659D00B9D51D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08D43692390FA53667AD5CE8 /* Pods-DatabaseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DatabaseApp/Info.plist;
@@ -350,6 +434,7 @@
 		};
 		847A40CF1C19659D00B9D51D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0B735987CC4512B5C8331F /* Pods-DatabaseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DatabaseApp/Info.plist;
@@ -402,6 +487,7 @@
 				847A40CF1C19659D00B9D51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		847A40D01C19659D00B9D51D /* Build configuration list for PBXNativeTarget "DatabaseAppTests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +496,7 @@
 				847A40D21C19659D00B9D51D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
